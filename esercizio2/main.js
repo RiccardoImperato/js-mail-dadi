@@ -8,25 +8,25 @@ const startButton = document.querySelector('#start');
 // Evento lancio dadi
 startButton.addEventListener("click", function () {
     // Punteggio giocatore
-    const giocatore = (Math.floor(Math.random() * 6));
+    const giocatore = (Math.floor(Math.random() * 6 + 1));
     // Punteggio computer
-    const computer = (Math.floor(Math.random() * 6));
+    const computer = (Math.floor(Math.random() * 6 + 1));
     console.log('Giocatore: ', giocatore);
     console.log('Computer: ', computer);
     // Valori nel DOM
-    player.innerHTML = giocatore;
-    com.innerHTML = computer;
+    player.innerHTML = ('Giocatore: ' + giocatore);
+    com.innerHTML = ('Computer: ' + computer);
     // Condizioni
     if (giocatore > computer) {
         console.log('Hai Vinto');
-        risultato.innerHTML = ('Hai Vinto');
+        risultato.innerHTML = ('Hai Vinto!');
     }
     else if (giocatore === computer) {
         console.log('Pareggio');
-        risultato.innerHTML = ('Pareggio');
+        risultato.innerHTML = ('Pareggio!');
     }
     else {
         console.log('Hai Perso');
-        risultato.innerHTML = ('Hai Perso');
+        risultato.innerHTML = ('Hai Perso!');
     }
 })

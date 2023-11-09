@@ -1,0 +1,17 @@
+/* Common */
+
+.dice-container {
+    margin: 0 auto;
+    height: 11.25rem;
+    max-width: 31.25rem;
+}
+
+.player,
+.com,
+.risultato {
+    height: 1.875rem;
+    width: 6.25rem;
+    line-height: 1.875rem;
+}
+
+/*/ Common */
