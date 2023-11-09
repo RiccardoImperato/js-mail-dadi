@@ -8,7 +8,7 @@ const emailUtente = document.querySelector('#user');
 // Bottone Log in
 const logInButton = document.querySelector('#log-in');
 // Risultato
-const risultato = document.querySelector('.risultato')
+const risultato = document.querySelector('.risultato');
 // Evento bottone Log in 
 logInButton.addEventListener("click", function () {
     const userValue = emailUtente.value
@@ -17,8 +17,13 @@ logInButton.addEventListener("click", function () {
         // In caso positivo stampo in console e nel DOM "Email trovata" 
         if (emailIscritti[i] === userValue) {
             console.log('Email Trovata: ', userValue);
-            risultato.innerHTML = ('Email Trovata')
+            risultato.innerHTML = ('Email Trovata');
             break;
+        }
+        // In caso negativo stampo in console e nel DOM "Email non trovata" 
+        else {
+            console.log('Email non Trovata');
+            risultato.innerHTML = ('Email non Trovata');
         }
     }
 })
