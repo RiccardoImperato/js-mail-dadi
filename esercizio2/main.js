@@ -8,9 +8,9 @@ const startButton = document.querySelector('#start');
 // Evento lancio dadi
 startButton.addEventListener("click", function () {
     // Punteggio giocatore
-    const giocatore = (Math.floor(Math.random() * 6 + 1));
+    const giocatore = Math.floor(Math.random() * 6) + 1;
     // Punteggio computer
-    const computer = (Math.floor(Math.random() * 6 + 1));
+    const computer = Math.floor(Math.random() * 6) + 1;
     console.log('Giocatore: ', giocatore);
     console.log('Computer: ', computer);
     // Valori nel DOM
